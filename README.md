@@ -5,8 +5,8 @@ Open DBDemoOneTable in NetBeans
 
 Run the project:
 
-<img width="331" alt="image" src="https://user-images.githubusercontent.com/56609358/92178689-ed2bd800-edf7-11ea-963b-dd600eb70520.png">
-<img width="326" alt="image" src="https://user-images.githubusercontent.com/56609358/92178718-016fd500-edf8-11ea-9ff2-ea95b293144f.png">
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/56609358/92178718-016fd500-edf8-11ea-9ff2-ea95b293144f.png"><img width="331" alt="image" src="https://user-images.githubusercontent.com/56609358/92178689-ed2bd800-edf7-11ea-963b-dd600eb70520.png">
+
 
 
 
