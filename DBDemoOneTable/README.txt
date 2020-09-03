@@ -5,8 +5,7 @@ JavaFX demo program to manipulate a JavaDB database using JDBC
 
 Must have recent JDK, otherwise the Alert class is not recognized:
 - Close NetBeans
-- Download recent JDK (or get from instructor) and install
-- Note the version number (e.g. 66 is the latest as of this moment)
+- Download recent JDK and install
 - Run Wordpad as Administrator
 - Open C:\Program Files\Netbeans folder\etc\netbeans.conf
 - edit line with jdkhome setting and replace old version with new version
