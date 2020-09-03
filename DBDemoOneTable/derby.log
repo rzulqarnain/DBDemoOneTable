@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Sep 03 15:07:35 PDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0174-5602-c059-000005abb0f0 
+on database directory /Users/rajazulqarnain/Documents/DBDemoOneTable/DB with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/Users/rajazulqarnain/Documents/DBDemoOneTable/dist/run957486707/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_221-b11
+user.dir=/Users/rajazulqarnain/Documents/DBDemoOneTable
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

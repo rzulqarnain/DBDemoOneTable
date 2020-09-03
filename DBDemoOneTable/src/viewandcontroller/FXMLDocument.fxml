@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewandcontroller.FXMLDocumentController">
+    <children>
+        <TableView fx:id="tblCourse" layoutY="173.0" onMouseClicked="#handleCourseClick" prefHeight="198.0" prefWidth="328.0">
+            <columns>
+                <TableColumn fx:id="colCourseId" prefWidth="54.0" text="ID" />
+                <TableColumn fx:id="colCourseName" prefWidth="221.0" text="Name" />
+                <TableColumn fx:id="colCourseCredit" prefWidth="48.0" text="Credit" />
+            </columns>
+        </TableView>
+        <TabPane prefHeight="173.0" prefWidth="328.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="User">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="153.0" prefWidth="328.0">
+                            <children>
+                                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleShowAllCourse" prefHeight="25.0" prefWidth="305.0" text="Show All Records" />
+                                <Label layoutX="16.0" layoutY="51.0" text="Credits between " />
+                                <ComboBox fx:id="cmbCourseCreditsMin" layoutX="112.0" layoutY="47.0" prefHeight="25.0" prefWidth="56.0" />
+                                <Label layoutX="175.0" layoutY="51.0" text="and" />
+                                <ComboBox fx:id="cmbCourseCreditsMax" layoutX="202.0" layoutY="47.0" prefHeight="25.0" prefWidth="64.0" />
+                                <Button layoutX="273.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleShowCourseByCredits" text="Show" />
+                                <Label layoutX="16.0" layoutY="82.0" text="Course ID starts with" />
+                                <ComboBox fx:id="cmbCoursePrefix" layoutX="202.0" layoutY="78.0" prefHeight="25.0" prefWidth="64.0" />
+                                <Button layoutX="273.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleShowCourseByPrefix" text="Show" />
+                                <Label layoutX="16.0" layoutY="115.0" text="Course Name contains" />
+                                <TextField fx:id="txtCourseNameContains" layoutX="202.0" layoutY="111.0" prefHeight="25.0" prefWidth="64.0" />
+                                <Button layoutX="273.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleShowCourseByName" text="Show" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Admin">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="143.0" prefWidth="161.0">
+                            <children>
+                                <TextField fx:id="txtCourseId" layoutX="82.0" layoutY="51.0" prefHeight="25.0" prefWidth="81.0" promptText="ID" />
+                                <TextField fx:id="txtCourseName" layoutX="82.0" layoutY="81.0" prefHeight="25.0" prefWidth="82.0" promptText="Name" />
+                                <TextField fx:id="txtCourseCredits" layoutX="82.0" layoutY="113.0" prefHeight="25.0" prefWidth="82.0" promptText="Credits" />
+                                <Button layoutX="172.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleDeleteCourse" prefHeight="25.0" prefWidth="82.0" text="Delete" />
+                                <Button layoutX="172.0" layoutY="51.0" mnemonicParsing="false" onAction="#handleCreateCourse" prefHeight="25.0" prefWidth="82.0" text="Create" />
+                                <Button layoutX="173.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleUpdateCourse" prefHeight="25.0" prefWidth="81.0" text="Update" />
+                                <Button layoutX="82.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleDeleteDB" prefHeight="25.0" prefWidth="82.0" text="Delete DB" />
+                                <Button layoutX="173.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleCreateDB" prefHeight="25.0" prefWidth="81.0" text="Create DB" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
